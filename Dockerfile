@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:bullseye-slim
 
 RUN which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
 RUN mkdir -p ~/.ssh
